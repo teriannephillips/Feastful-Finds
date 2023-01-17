@@ -7,6 +7,23 @@
 
 }
 
-/* .heading {
-    text-align: justify;
-} */
+.nav {
+    background-color: rgb(235, 227, 218);
+}
+
+.heading {
+    display: flex;
+    margin-right: auto;
+    font-size: 150px;
+    font-weight: 600;
+    background-image: linear-gradient(to bottom left,#553c9a, #ee4b2b);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}   
+
+.searchbar {
+    margin: auto;
+    padding: 10px;
+    width: auto;
+}
