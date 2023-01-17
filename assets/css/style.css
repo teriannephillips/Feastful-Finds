@@ -16,6 +16,7 @@
 }
 
 .heading {
+    /* display: inline-block; */
     display: flex;
     margin-right: 15%;
     float: right;
@@ -26,6 +27,17 @@
     background-clip: text;
     -webkit-background-clip: text;
 }   
+
+.headingSub {
+    display: flex;
+    margin-right: 15%;
+    float: right;
+    font-size: 25px;
+    background-image: linear-gradient(to bottom left,#553c9a, #ee4b2b);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
 
 .searchbar {
     margin: auto;
@@ -52,3 +64,9 @@ hr {
     overflow-wrap: break-word;
     font-size: 35px;
 }
+
+.advice {
+    overflow-wrap: break-word;
+}
+
+
