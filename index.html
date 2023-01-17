@@ -10,12 +10,12 @@
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <section>
-        <div class="uk-block test">
-            <div class="uk-grid test nav">
-                <div class="uk-width-1-4 test">
-                    <img src="./assets/images/logo.png" class="uk-border-circle uk-height-medium uk-width-medium uk-margin-large-left" alt="Logo" />
+        <div class="uk-block">
+            <div class="uk-grid nav">
+                <div class="uk-width-1-4">
+                    <img src="./assets/images/logo.png" class="uk-border-circle uk-margin-large-left logo" alt="Logo" />
                 </div>
-                <div class="uk-width-3-4 uk-card uk-card-large">
+                <div class="uk-width-3-4 uk-card uk-card-large test">
                     <h1 class="heading">Feastfull Finds</h1>
                 </div>
                 
@@ -25,8 +25,8 @@
             <div class="uk-flex test">
                 <form class="uk-search uk-search-large uk-flex searchbar">
                     <div class="uk-flex">
-                        <input class="uk-search-input" type="text" placeholder="Search by ingredient(s)...">
-                        <button class="uk-button uk-button-default">Search</button>
+                        <input id= "ingredients-search" class="uk-search-input" type="text" placeholder="Search by ingredient(s)...">
+                        <button id= "search-button" type="submit" value="Search" class="uk-button uk-button-default">Search</button>
                     </div>
                 </form>
             </div>
@@ -34,17 +34,23 @@
             <div class="search-result">
             </div>
 
-            <div id="recipe-container">
-                <div class="recipe">
+            <hr /> <!--decorative breaking line-->
 
-                    <img id="img-1">
+            <div id="recipe-container" class="recipteContainer uk-grid uk-grid-column-small uk-margin-medium-left uk-margin-medium-right uk-grid-row-large uk-text-center">
+
+                <div class="recipe uk-card uk-card-default uk-card-hover uk-card-body ">
+
+                    <div class="uk-card-media-top test">
+                        <img id="img-1" height="1100" width="1100">
+                    </div>
+                    
                     <a id="anchor-1" href="">
-                        <h1 class="recepie-title" id="recipe-title-1"></h1>
+                        <h3 class="recepie-title" id="recipe-title-1">Chicken chicken chicken chicken</h3> <!--put chicken here for testing only-->
                     </a>
 
                 </div>
 
-                <div class="recipe">
+                <div class="recipe uk-card uk-card-default uk-card-hover uk-card-body">
 
                     <img id="img-2">
                     <a id="anchor-2" href="">
@@ -53,7 +59,7 @@
 
                 </div>
 
-                <div class="recipe">
+                <div class="recipe uk-card uk-card-default uk-card-hover uk-card-body">
 
                     <img id="img-3">
                     <a id="anchor-3" href="">
@@ -62,7 +68,7 @@
 
                 </div>
 
-                <div class="recipe">
+                <div class="recipe uk-card uk-card-default uk-card-hover uk-card-body">
 
                     <img id="img-4">
                     <a id="anchor-4" href="">
@@ -71,7 +77,7 @@
 
                 </div>
 
-                <div class="recipe">
+                <div class="recipe uk-card uk-card-default uk-card-hover uk-card-body">
 
                     <img id="img-5">
                     <a id="anchor-5" href="">
@@ -80,7 +86,7 @@
 
                 </div>
 
-                <div class="recipe">
+                <div class="recipe uk-card uk-card-default uk-card-hover uk-card-body">
 
                     <img id="img-6">
                     <a id="anchor-6" href="">
@@ -89,7 +95,7 @@
 
                 </div>
 
-                <div class="recipe">
+                <div class="recipe uk-card uk-card-default uk-card-hover uk-card-body">
 
                     <img id="img-7">
                     <a id="anchor-7" href="">
@@ -98,7 +104,7 @@
 
                 </div>
 
-                <div class="recipe">
+                <div class="recipe uk-card uk-card-default uk-card-hover uk-card-body">
 
                     <img id="img-8">
                     <a id="anchor-8" href="">
@@ -107,7 +113,7 @@
 
                 </div>
 
-                <div class="recipe">
+                <div class="recipe uk-card uk-card-default uk-card-hover uk-card-body">
                     <img id="img-9">
                     <a id="anchor-9" href="">
                         <h1 class="recepie-title" id="recipe-title-9"></h1>
@@ -115,7 +121,7 @@
 
                 </div>
 
-                <div class="recipe">
+                <div class="recipe uk-card uk-card-default uk-card-hover uk-card-body">
 
                     <img id="img-10">
                     <a id="anchor-10" href="">

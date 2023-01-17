@@ -11,9 +11,14 @@
     background-color: rgb(235, 227, 218);
 }
 
+.logo {
+    height: 330px;
+}
+
 .heading {
     display: flex;
-    margin-right: auto;
+    margin-right: 15%;
+    float: right;
     font-size: 150px;
     font-weight: 600;
     background-image: linear-gradient(to bottom left,#553c9a, #ee4b2b);
@@ -26,4 +31,24 @@
     margin: auto;
     padding: 10px;
     width: auto;
+}
+
+hr {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recipeContainer {
+    display: flexbox;
+}
+
+.recipe {
+    margin: auto;
+    width: 30%;
+}
+
+.recepie-title {
+    overflow-wrap: break-word;
+    font-size: 35px;
 }
