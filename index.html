@@ -15,33 +15,44 @@
                 <div class="uk-width-1-4">
                     <img src="./assets/images/logo.png" class="uk-border-circle uk-margin-large-left logo" alt="Logo" />
                 </div>
-                <div class="uk-width-3-4 test">
-                    <h1 class="heading test">Feastfull Finds</h1>
-                    <h3 class="headingSub test">can put some word/slogen here</h3>
+                <div class="uk-width-3-4 ">
+                    <h1 class="heading ">Feastfull Finds</h1>
+                    <h3 class="headingSub ">can put some word/slogen here</h3>
                 </div>
                 
             </div>
         
             <!--Search section-->
-            <div class="uk-flex test">
+            <div class="uk-flex ">
                 <form class="uk-search uk-search-large uk-flex searchbar">
                     <div class="uk-flex">
-                        <input id= "ingredients-search" class="uk-search-input" type="text" placeholder="Search by ingredient(s)...">
+                        <input id= "ingredients-search" class="uk-search-input" type="text" placeholder="Search by ingredient(s)">
                         <button id= "search-button" type="submit" value="Search" class="uk-button uk-button-default">Search</button>
                     </div>
                 </form>
             </div>
             
             <div class="search-result">
-            </div>
+            </div> <!--haozhe: im not sure what it does-->
+
+            <hr /> <!--decorative breaking line-->
 
             <!--advice slip div id is "adviceSlip"-->
-            <div class="uk-flex uk-margin-medium-left uk-margin-medium-right test">
+            <div class="uk-flex uk-margin-medium-left uk-margin-medium-right">
                 <div class="advice" id="adviceSlip"></div>
             </div>
 
             <hr /> <!--decorative breaking line-->
 
+            <!--modal for failed fetch-->
+            <div id="modal" class="theModal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Sorry can not find recipe matches this ingredient, please try again.</p>
+                </div>
+            </div>
+
+            <!--recipe search results-->
             <div id="recipe-container" class="recipteContainer uk-grid uk-grid-column-small uk-margin-medium-left uk-margin-medium-right uk-grid-row-large uk-text-center">
 
                 <div class="recipe uk-card uk-card-default uk-card-hover uk-card-body ">
@@ -173,11 +184,12 @@
             <p>
                 &copy; <span id="date"></span>
                 <span class="footer-logo">Feastful Finds</span>
+            </p>
         </footer>
 
         <body>
             <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-            <script src="./assets/javascript/script.js"></script>
+            <script src="./assets/script/script.js"></script>
         </body>
 
     </html>

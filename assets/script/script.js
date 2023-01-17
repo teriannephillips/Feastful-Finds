@@ -26,6 +26,11 @@ var getRecipes = function () {
             console.log(data);
             extractData(data);
         })
+        .catch(error => { //Haozhe: failed fetch will open the modal in html
+            if (error.message == 'Bad Request') {
+                modal.style.display = "block";   
+            }
+        })
 }
 //   execute get recipes function 
 getRecipes();
@@ -37,5 +42,22 @@ var extractData = function (data) {
         console.log(title);
         console.log(imageUrl);
         //TO DO: Mathieu - create function that renders recipes to the html index page by passing the variables title and imageUrl
+    }
+}
+
+// haozhe: modal close js
+
+var modal = document.getElementById("modal");
+var span = document.getElementsByClassName("close")[0];
+  
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+  
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
     }
 }
