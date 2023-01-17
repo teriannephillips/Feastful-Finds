@@ -1,8 +1,12 @@
-test {
-    border-style: solid !important;
-    border-width: thick !important;
-    border-color: black !important;
-    height: 800px !important;
-    width: 800px !important;
+.test {
+    border-style: solid;
+    border-width: thick;
+    border-color: black;
+    /* height: 800px !important;
+    width: 800px !important; */
 
 }
+
+/* .heading {
+    text-align: justify;
+} */

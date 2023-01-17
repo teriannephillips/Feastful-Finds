@@ -6,25 +6,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Feastful Finds</title>
         <link rel="stylesheet" href="./assets/css/reset.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.21/dist/css/uikit.min.css" />
+        <link rel="stylesheet" href="./assets/css/uikit.min.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <section>
-        <div class="uk-block">
-            <div class="uk-grid">
-                <div class="uk-width-1-4 ">
-                    <img src="./assets/images/logo.png" class="uk-height-medium uk-width-medium uk-margin-medium" alt="Logo" />
+        <div class="uk-block test">
+            <div class="uk-grid test">
+                <div class="uk-width-1-4 test">
+                    <img src="./assets/images/logo.png" class="uk-border-circle uk-height-medium uk-width-medium uk-margin-large-left" alt="Logo" />
                 </div>
-                <div class="uk-width-3-4">
-                    <h1 class="uk-width-3-4 uk-card uk-card-body">Feastfull Finds</h1>
+                <div class="uk-width-3-4 uk-card uk-card-large">
+                    <h1 class="uk-heading-large uk-text-center">Feastfull Finds</h1>
                 </div>
                 
             </div>
+        
             
-            <form>
-                <input type="text" placeholder="Search by ingredient(s)...">
-                <ion-icon name="search"></ion-icon>
-            </form>
+            <div class="uk-flex uk-flex-center">
+                <form class="uk-search uk-search-default">
+                    <!-- <div class="uk-margin">
+                        <input class="uk-input" type="text" placeholder="Search by ingredient(s)...">
+                    </div> -->
+                    
+                    
+                    <ion-icon name="search"></ion-icon>
+                </form>
+            </div>
+            
             <div class="search-result">
             </div>
 
