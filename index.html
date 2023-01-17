@@ -5,13 +5,17 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Feastful Finds</title>
-        <!-- <link rel="stylesheet" href="./assets/css/reset.css" /> -->
-        <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.21/dist/css/uikit.min.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <section>
-        <div class="container initial">
-            <h1 class="brand">Feastfull Finds</h1>
-            <img src="./assets/images/logo.png" alt="Logo" />
+        <div class="uk-flex">
+            <div class="uk-grid">
+                <img src="./assets/images/logo.png" class="uk-width-1-4 uk-height-medium uk-width-medium uk-margin-medium" alt="Logo" />
+                <h1 class="uk-card uk-card-default uk-card-body">Feastfull Finds</h1>
+            </div>
+            
             <form>
                 <input type="text" placeholder="Search by ingredient(s)...">
                 <ion-icon name="search"></ion-icon>
@@ -19,7 +23,7 @@
             <div class="search-result">
             </div>
 
-            <divi id="recipe-container">
+            <div id="recipe-container">
                 <div class="recipe">
 
                     <img id="img-1">
@@ -108,7 +112,7 @@
                     </a>
 
                 </div>
-        </div>
+            </div>
         </div>
 
 
