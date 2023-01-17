@@ -1,114 +1,126 @@
-<!DOCTYPE html>
-<html lang="en">
+<<!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Feastful Finds</title>
-    <!-- <link rel="stylesheet" href="./assets/css/reset.css" /> -->
-    <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
-</head>
-<section>
-    <div class="container initial">
-        <h1 class="brand">Feastfull Finds</h1>
-        <img src="./assets/images/feastful-logo.png" alt="Logo" />
-        <form>
-            <input type="text" placeholder="Search for a Recipe...">
-            <ion-icon name="search"></ion-icon>
-        </form>
-        <div class="search-result">
-        </div>
-        <divi id="recipe-container">
-            <div class="recipe">
-                <div class="flex-container">
-                    <img src="./assets/images/Fried-chickem.png" alt="Fried-chicken" />
-                    <h1 class="recipe-title">Crispy Buttermilk Fried Chicken</h1>
-                    <a href="#">View recipe</a>
-                </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Feastful Finds</title>
+        <!-- <link rel="stylesheet" href="./assets/css/reset.css" /> -->
+        <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
+    </head>
+    <section>
+        <div class="container initial">
+            <h1 class="brand">Feastfull Finds</h1>
+            <img src="./assets/images/logo.png" alt="Logo" />
+            <form>
+                <input type="text" placeholder="Search by ingredient(s)...">
+                <ion-icon name="search"></ion-icon>
+            </form>
+            <div class="search-result">
             </div>
-    </div>
 
-    <div class="recipe">
-        <div class="flex-container">
-            <img src="./assets/images/Zucchini Omlette.png" alt="Zucchini Omelette" />
-            <h1 class="recipe-title">Zucchini Chicken Omelette</h1>
-            <a href="#">View recipe</a>
+            <divi id="recipe-container">
+                <div class="recipe">
+
+                    <img id="img-1">
+                    <a id="anchor-1" href="">
+                        <h1 class="recepie-title" id="recipe-title-1"></h1>
+                    </a>
+
+                </div>
+
+                <div class="recipe">
+
+                    <img id="img-2">
+                    <a id="anchor-2" href="">
+                        <h1 class="recepie-title" id="recipe-title-2"></h1>
+                    </a>
+
+                </div>
+
+                <div class="recipe">
+
+                    <img id="img-3">
+                    <a id="anchor-3" href="">
+                        <h1 class="recepie-title" id="recipe-title-3"></h1>
+                    </a>
+
+                </div>
+
+                <div class="recipe">
+
+                    <img id="img-4">
+                    <a id="anchor-4" href="">
+                        <h1 class="recepie-title" id="recipe-title-4"></h1>
+                    </a>
+
+                </div>
+
+                <div class="recipe">
+
+                    <img id="img-5">
+                    <a id="anchor-5" href="">
+                        <h1 class="recepie-title" id="recipe-title-5"></h1>
+                    </a>
+
+                </div>
+
+                <div class="recipe">
+
+                    <img id="img-6">
+                    <a id="anchor-6" href="">
+                        <h1 class="recepie-title" id="recipe-title-6"></h1>
+                    </a>
+
+                </div>
+
+                <div class="recipe">
+
+                    <img id="img-7">
+                    <a id="anchor-7" href="">
+                        <h1 class="recepie-title" id="recipe-title-7"></h1>
+                    </a>
+
+                </div>
+
+                <div class="recipe">
+
+                    <img id="img-8">
+                    <a id="anchor-8" href="">
+                        <h1 class="recepie-title" id="recipe-title-8"></h1>
+                    </a>
+
+                </div>
+
+                <div class="recipe">
+                    <img id="img-9">
+                    <a id="anchor-9" href="">
+                        <h1 class="recepie-title" id="recipe-title-9"></h1>
+                    </a>
+
+                </div>
+
+                <div class="recipe">
+
+                    <img id="img-10">
+                    <a id="anchor-10" href="">
+                        <h1 class="recepie-title" id="recipe-title-10"></h1>
+                    </a>
+
+                </div>
         </div>
-    </div>
-
-    <div class="recipe">
-        <div class="flex-container">
-            <img src="./assets/images/Lemon-Garlic.png" alt="Lemon-Garlic Chicken" />
-            <h1 class="recipe-title">Lemon and Garlic Slow Roasted Chicken</h1>
-            <a href="#">View recipe</a>
         </div>
-    </div>
 
-    <div class="recipe">
-        <div class="flex-container">
-            <img src="./assets/images/Slow-Cooker.png" alt="Slow-Cooker Chicken" />
-            <h1 class="recipe-title">Slow Cooker Rosemary Whole Chicken</h1>
-            <a href="#">View recipe</a>
-        </div>
-    </div>
 
-    <div class="recipe">
-        <div class="flex-container">
-            <img src="./assets/images/Chicken-Suya.png" alt="Chicken-Suya" />
-            <h1 class="recipe-title">Chicken Suya</h1>
-            <a href="#">View recipe</a>
-        </div>
-    </div>
+        <footer class="page-footer">
+            <p>
+                &copy; <span id="date"></span>
+                <span class="footer-logo">Feastful Finds</span>
+        </footer>
 
-    <div class="recipe">
-        <div class="flex-container">
-            <img src="./assets/images/Chicken-pot-pie.png" alt="Chicken-pot-pie" />
-            <h1 class="recipe-title">Easy Chicken Pot Pie</h1>
-            <a href="#">View recipe</a>
-        </div>
-    </div>
+        <body>
+            <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+            <script src="./assets/javascript/script.js"></script>
+        </body>
 
-    <div class="recipe">
-        <div class="flex-container">
-            <img src="./assets/images/Skillet-rosted.png" alt="Skillet-rosted Chicken" />
-            <h1 class="recipe-title">Skillet Roasted Chicken & Potatoes</h1>
-            <a href="#">View recipe</a>
-        </div>
-    </div>
-
-    <div class="recipe">
-        <div class="flex-container">
-            <img src="./assets/images/Grilled-seseme.png" alt="Grilled-seseme Chicken" />
-            <h1 class="recipe-title">Grilled Sesame Chicken</h1>
-            <a href="#">View recipe</a>
-        </div>
-    </div>
-
-    <div class="recipe">
-        <div class="flex-container">
-            <img src="./assets/images/Buffalo-chicken.png" alt="Buffalo-chicken Wonton Wraps" />
-            <h1 class="recipe-title">Buffalo Chicken Wings Wonton Wraps</h1>
-            <a href="#">View recipe</a>
-        </div>
-    </div>
-    </div>
-
-    <div class="recipe">
-        <div class="flex-container">
-            <img src="./assets/images/Udon-noodles.png" alt="Udon-noodles Chicken Tempura" />
-            <h1 class="recipe-title">Udon Noodles Chicken Tempura</h1>
-            <a href="#">View recipe</a>
-        </div>
-    </div>
-
-    <footer class="page-footer">
-        <p>
-            &copy; <span id="date"></span>
-            <span class="footer-logo">Feastful Finds</span>
-    </footer>
-
-    <body>
-        <script src="./assets/javascript/script.js"></script>
-    </body>
-
-</html>
+    </html>
