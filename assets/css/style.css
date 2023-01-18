@@ -97,7 +97,7 @@ hr {
     font-weight: bold;
 }
 
-.close,.close2,.close3 :hover,
+.close,.close2,.close3:hover,
 .close,.close2,.close3 :focus {
   color: black;
   text-decoration: none;
