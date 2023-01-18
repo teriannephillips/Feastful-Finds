@@ -44,11 +44,27 @@
 
             <hr /> <!--decorative breaking line-->
 
-            <!--modal for failed fetch-->
-            <div id="modal" class="theModal">
+            <!--modal for invalid ingredient-->
+            <div id="modalInvalidIngredient" class="theModal">
                 <div class="modal-content">
                     <span class="close">&times;</span>
-                    <p>Sorry can not find recipe matches this ingredient, please try again.</p>
+                    <p>Please enter a valid ingredient.</p>
+                </div>
+            </div>
+
+            <!--modal for failed fetch-->
+            <div id="modalFailedFetch" class="theModal">
+                <div class="modal-content">
+                    <span class="close2">&times;</span>
+                    <p>Something went wrong, please try again.</p>
+                </div>
+            </div>
+
+            <!--modal for blank input-->
+            <div id="modalBlank" class="theModal">
+                <div class="modal-content">
+                    <span class="close3">&times;</span>
+                    <p>Please enter at lease one ingredient.</p>
                 </div>
             </div>
 

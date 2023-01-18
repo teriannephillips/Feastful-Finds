@@ -33,14 +33,14 @@ var getRecipes = function (ingredients) {
                     else {
                         console.log("please enter a valid ingredient")
                         //TODO: Huang - Modals
-                        modal.style.display = 'block';
+                        modal1.style.display = 'block';
                     }
                 });
             }
             else {
                 console.log(response.status);
                 //TO DO: Huang - Modals
-                modal.style.display = 'block';
+                modal2.style.display = 'block';
             }
         });
 }
@@ -65,7 +65,7 @@ var formSubmit = function (event) {
     else {
         console.log("Please enter at least one ingredient");
         //TO DO: Huang - Modals
-        modal.style.display = 'block';
+        modal3.style.display = 'block';
     }
 }
 //event listener for the search
@@ -73,17 +73,29 @@ formEl.addEventListener('submit', formSubmit);
 
 // haozhe: modal close js
 
-var modal = document.getElementById("modal");
-var span = document.getElementsByClassName("close")[0];
+var modal1 = document.getElementById("modalInvalidIngredient");
+var modal2 = document.getElementById("modalFailedFetch");
+var modal3 = document.getElementById("modalBlank");
+var span1 = document.getElementsByClassName("close")[0];
+var span2 = document.getElementsByClassName("close2")[0];
+var span3 = document.getElementsByClassName("close3")[0];
   
 
-span.onclick = function() {
-    modal.style.display = "none";
+span1.onclick = function() {
+    modal1.style.display = "none";
+}
+span2.onclick = function() {
+    modal2.style.display = "none";
+}
+span3.onclick = function() {
+    modal3.style.display = "none";
 }
   
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if (event.target == modal1||modal2||modal3) {
+        modal1.style.display = "none";
+        modal2.style.display = "none";
+        modal3.style.display = "none";
     }
 }
