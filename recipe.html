@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feastful Finds</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/uikit.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <div class="uk-block">
+        <div class="uk-grid nav">
+            <div class="uk-width-1-4">
+                <img src="./assets/images/logo.png" class="uk-border-circle uk-margin-large-left logo" alt="Logo" />
+            </div>
+            <div class="uk-width-3-4 ">
+                <h2 class="heading ">Feastful Finds</h2>
+                <h3 class="headingSub ">Discover a feast of flavours- where every recipe is a culinary adventure!</h3>
+            </div>
+        </div>
+        <div id="recipe-container">
+            <div id="recipe-name" class = "h2"></div>
+            <ul id="ingredients-id">ingredients:</ul>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+            integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+        <script src="./assets/script/recipeScript.js"></script>
+</body>
+<footer class="page-footer">
+    <p>
+        <span id="date-id"></span>
+        <span class="footerlogo">Feastful Finds by M.A.T.H coders</span>
+    </p>
+    <script src="./assets/script/footer.js"></script>
+</footer>
+
+</html>

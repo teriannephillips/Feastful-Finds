@@ -6,9 +6,13 @@
     width: 800px !important; */
 
 }
+body {
+    background-color: #0f7cf1;
+    color: white
+}
 
 .nav {
-    background-color: rgb(235, 227, 218);
+    background-color: #bed3f0;
 }
 
 .logo {
@@ -22,7 +26,7 @@
     float: right;
     font-size: 150px;
     font-weight: 600;
-    background-image: linear-gradient(to bottom left,#553c9a, #ee4b2b);
+    background-color: #0f7cf1;
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -33,7 +37,7 @@
     margin-right: 15%;
     float: right;
     font-size: 25px;
-    background-image: linear-gradient(to bottom left,#553c9a, #ee4b2b);
+    background-color: #0f7cf1;
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -52,21 +56,26 @@ hr {
 }
 
 .recipeContainer {
-    display: flexbox;
+    display: none;
 }
 
 .recipe {
     margin: auto;
+    margin-bottom: 3%;
     width: 30%;
+    height: 400px;
+    text-align: center;
 }
 
-.recepie-title {
+.recipe-title {
     overflow-wrap: break-word;
     font-size: 35px;
 }
 
 .advice {
+    width: 100%;
     overflow-wrap: break-word;
+    color: white;
 }
 
 .theModal {
@@ -88,6 +97,7 @@ hr {
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
+    color:#0f7cf1;
 }
 
 .close,.close2,.close3 {
@@ -104,4 +114,12 @@ hr {
   cursor: pointer;
 }
 
-
+.footerlogo {
+    color: white;
+}
+.h2 {
+font-size: x-large;
+}
+li {
+    margin-top: 1%;
+}
