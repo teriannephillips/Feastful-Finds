@@ -1,0 +1,107 @@
+.test {
+    border-style: solid;
+    border-width: thick;
+    border-color: black;
+    /* height: 800px !important;
+    width: 800px !important; */
+
+}
+
+.nav {
+    background-color: rgb(235, 227, 218);
+}
+
+.logo {
+    height: 330px;
+}
+
+.heading {
+    /* display: inline-block; */
+    display: flex;
+    margin-right: 15%;
+    float: right;
+    font-size: 150px;
+    font-weight: 600;
+    background-image: linear-gradient(to bottom left,#553c9a, #ee4b2b);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}   
+
+.headingSub {
+    display: flex;
+    margin-right: 15%;
+    float: right;
+    font-size: 25px;
+    background-image: linear-gradient(to bottom left,#553c9a, #ee4b2b);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.searchbar {
+    margin: auto;
+    padding: 10px;
+    width: auto;
+}
+
+hr {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recipeContainer {
+    display: flexbox;
+}
+
+.recipe {
+    margin: auto;
+    width: 30%;
+}
+
+.recepie-title {
+    overflow-wrap: break-word;
+    font-size: 35px;
+}
+
+.advice {
+    overflow-wrap: break-word;
+}
+
+.theModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+

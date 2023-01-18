@@ -1,95 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Feastful Finds</title>
-    <!-- <link rel="stylesheet" href="./assets/css/reset.css" /> -->
-    <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
-</head>
-
-<body>
-    <section>
-        <div class="container initial">
-            <img src="./assets/images/logo.png" alt="Logo" />
-            <form>
-                <input type="text" id= "ingredients-search" placeholder="Search by ingredient(s)...">
-                <input id=search-button type="submit" value="Search">
-            </form>
-            <div class="search-result">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Feastful Finds</title>
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/uikit.min.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <div class="uk-block">
+            <div class="uk-grid nav">
+                <div class="uk-width-1-4">
+                    <img src="./assets/images/logo.png" class="uk-border-circle uk-margin-large-left logo" alt="Logo" />
+                </div>
+                <div class="uk-width-3-4 ">
+                    <h1 class="heading ">Feastful Finds</h1>
+                    <h3 class="headingSub ">can put some word/slogen here</h3>
+                </div>
+                
             </div>
-            <divi id="recipe-container">
-                <div class="recipe">
-                    <img id="img-1">
+        
+            <!--Search section-->
+            <div class="uk-flex ">
+                <form class="uk-search uk-search-large uk-flex searchbar">
+                    <div class="uk-flex">
+                        <input id= "ingredients-search" class="uk-search-input" type="text" placeholder="Search by ingredient(s)">
+                        <button id= "search-button" type="submit" value="Search" class="uk-button uk-button-default">Search</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="search-result">
+            </div> <!--haozhe: im not sure what it does-->
+
+            <hr /> <!--decorative breaking line-->
+
+            <!--advice slip div id is "adviceSlip"-->
+            <div class="uk-flex uk-margin-medium-left uk-margin-medium-right">
+                <div class="advice" id="adviceSlip"></div>
+            </div>
+
+            <hr /> <!--decorative breaking line-->
+
+            <!--modal for failed fetch-->
+            <div id="modal" class="theModal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Sorry can not find recipe matches this ingredient, please try again.</p>
+                </div>
+            </div>
+
+            <!--recipe search results-->
+            <div id="recipe-container" class="recipteContainer uk-grid uk-grid-column-small uk-margin-medium-left uk-margin-medium-right uk-grid-row-large uk-text-center">
+
+                <div class="recipe uk-card uk-card-default uk-card-hover uk-card-body ">
+
+                    <div class="uk-card-media-top">
+                        <img id="img-1" height="1100" width="1100">
+                    </div>
+                    
                     <a id="anchor-1" href="">
-                        <h1 class="recipe-title" id="recipe-title-1"></h1>
+                        <h3 class="recepie-title" id="recipe-title-1"></h3> 
                     </a>
                 </div>
-                <div class="recipe">
-                    <img id="img-2">
+
+                <div class="recipe uk-card uk-card-default uk-card-hover uk-card-body">
+
+                    <div class="uk-card-media-top">
+                        <img id="img-2" height="1100" width="1100">
+                    </div>
                     <a id="anchor-2" href="">
-                        <h1 class="recipe-title" id="recipe-title-2"></h1>
+                        <h3 class="recepie-title" id="recipe-title-2"></h3>
                     </a>
                 </div>
-                <div class="recipe">
-                    <img id="img-3">
+
+                <div class="recipe uk-card uk-card-default uk-card-hover uk-card-body">
+
+                    <div class="uk-card-media-top">
+                        <img id="img-3" height="1100" width="1100">
+                    </div>
                     <a id="anchor-3" href="">
-                        <h1 class="recipe-title" id="recipe-title-3"></h1>
+                        <h3 class="recepie-title" id="recipe-title-3"></h3>
                     </a>
                 </div>
-                <div class="recipe">
-                    <img id="img-4">
+
+                <div class="recipe uk-card uk-card-default uk-card-hover uk-card-body">
+
+                    <div class="uk-card-media-top">
+                        <img id="img-4" height="1100" width="1100">
+                    </div>
                     <a id="anchor-4" href="">
-                        <h1 class="recipe-title" id="recipe-title-4"></h1>
+                        <h3 class="recepie-title" id="recipe-title-4"></h3>
                     </a>
                 </div>
-                <div class="recipe">
-                    <img id="img-5">
+
+                <div class="recipe uk-card uk-card-default uk-card-hover uk-card-body">
+
+                    <div class="uk-card-media-top">
+                        <img id="img-5" height="1100" width="1100">
+                    </div>
                     <a id="anchor-5" href="">
-                        <h1 class="recipe-title" id="recipe-title-5"></h1>
+                        <h3 class="recepie-title" id="recipe-title-5"></h3>
                     </a>
                 </div>
-                <div class="recipe">
-                    <img id="img-6">
+
+                <div class="recipe uk-card uk-card-default uk-card-hover uk-card-body">
+
+                    <div class="uk-card-media-top">
+                        <img id="img-6" height="1100" width="1100">
+                    </div>
                     <a id="anchor-6" href="">
-                        <h1 class="recipe-title" id="recipe-title-6"></h1>
+                        <h3 class="recepie-title" id="recipe-title-6"></h3>
                     </a>
                 </div>
-                <div class="recipe">
-                    <img id="img-7">
+
+                <div class="recipe uk-card uk-card-default uk-card-hover uk-card-body">
+
+                    <div class="uk-card-media-top">
+                        <img id="img-7" height="1100" width="1100">
+                    </div>
                     <a id="anchor-7" href="">
-                        <h1 class="recipe-title" id="recipe-title-7"></h1>
+                        <h3 class="recepie-title" id="recipe-title-7"></h3>
                     </a>
                 </div>
-                <div class="recipe">
-                    <img id="img-8">
+
+                <div class="recipe uk-card uk-card-default uk-card-hover uk-card-body">
+
+                    <div class="uk-card-media-top">
+                        <img id="img-8" height="1100" width="1100">
+                    </div>
                     <a id="anchor-8" href="">
-                        <h1 class="recipe-title" id="recipe-title-8"></h1>
+                        <h3 class="recepie-title" id="recipe-title-8"></h3>
                     </a>
                 </div>
-                <div class="recipe">
-                    <img id="img-9">
+
+                <div class="recipe uk-card uk-card-default uk-card-hover uk-card-body">
+                    <div class="uk-card-media-top">
+                        <img id="img-9" height="1100" width="1100">
+                    </div>
                     <a id="anchor-9" href="">
-                        <h1 class="recipe-title" id="recipe-title-9"></h1>
+                        <h3 class="recepie-title" id="recipe-title-9"></h3>
                     </a>
                 </div>
-                <div class="recipe">
-                    <img id="img-10">
+
+                <div class="recipe uk-card uk-card-default uk-card-hover uk-card-body">
+
+                    <div class="uk-card-media-top">
+                        <img id="img-10" height="1100" width="1100">
+                    </div>
                     <a id="anchor-10" href="">
-                        <h1 class="recipe-title" id="recipe-title-10"></h1>
+                        <h3 class="recepie-title" id="recipe-title-10"></h3>
                     </a>
                 </div>
+
+                <!--add two dummy card here just to make everything aligned properly-->
+                <div class="recipe uk-card uk-card-body">
+
+                    <div class="uk-card-media-top"></div>
+                </div>
+                <div class="recipe uk-card uk-card-body">
+
+                    <div class="uk-card-media-top"></div>
+                </div>
+
+                
+            </div>
         </div>
-    </section>
-    <script src="./assets/script/script.js"></script>
-</body>
 
-<footer class="page-footer">
-    <p>
-        &copy; <span id="date"></span>
-        <span class="footer-logo">Feastful Finds</span>
-    </p>
-</footer>
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+        <script src="./assets/script/script.js"></script>
 
+    <body>
+    <footer class="page-footer">
+        <p>
+            &copy; <span id="date"></span>
+            <span class="footer-logo">Feastful Finds</span>
+        </p>
+    </footer>
 </html>

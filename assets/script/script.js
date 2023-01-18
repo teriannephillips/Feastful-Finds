@@ -33,12 +33,14 @@ var getRecipes = function (ingredients) {
                     else {
                         console.log("please enter a valid ingredient")
                         //TODO: Huang - Modals
+                        modal.style.display = 'block';
                     }
                 });
             }
             else {
                 console.log(response.status);
                 //TO DO: Huang - Modals
+                modal.style.display = 'block';
             }
         });
 }
@@ -63,8 +65,25 @@ var formSubmit = function (event) {
     else {
         console.log("Please enter at least one ingredient");
         //TO DO: Huang - Modals
+        modal.style.display = 'block';
     }
 }
 //event listener for the search
 formEl.addEventListener('submit', formSubmit);
 
+// haozhe: modal close js
+
+var modal = document.getElementById("modal");
+var span = document.getElementsByClassName("close")[0];
+  
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+  
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
