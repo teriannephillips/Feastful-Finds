@@ -1,8 +1,9 @@
 //get the recipe id stored in local storage and called the API
 var storedData = JSON.parse(localStorage.getItem("recipe"));
-//requestUrl = "https://api.spoonacular.com/recipes/" + storedData + "/information?includeNutrition=false&apiKey=de671bfd997d4e2bb42b9b72c3e38959";
-//fetch(requestUrl)
-fetch('./assets/script/singlerecipe.json')
+requestUrl = "https://api.spoonacular.com/recipes/" + storedData + "/information?includeNutrition=false&apiKey=de671bfd997d4e2bb42b9b72c3e38959";
+fetch(requestUrl)
+    //line below is for testing purposes as API had limits
+    //fetch('./assets/script/singlerecipe.json')
     .then(function (response) {
         if (response.ok) {
             response.json().then(function (data) {
@@ -12,7 +13,7 @@ fetch('./assets/script/singlerecipe.json')
         }
         else {
             console.log(response.status);
-             modal2.style.display = 'block';
+            modal2.style.display = 'block';
         }
     });
 

@@ -21,18 +21,17 @@ var getFortuneCookie = function () {
 getFortuneCookie();
 // recipes function
 var getRecipes = function (ingredients) {
-   // requestUrl = 'https://api.spoonacular.com/recipes/findByIngredients?ingredients=' + ingredients + '&apiKey=de671bfd997d4e2bb42b9b72c3e38959';
- 
-   fetch('./assets/script/query.json')
-      //    fetch(requestUrl)
+    requestUrl = 'https://api.spoonacular.com/recipes/findByIngredients?ingredients=' + ingredients + '&apiKey=de671bfd997d4e2bb42b9b72c3e38959';
+    //line below is for testing purposes as API has limits
+    // fetch('./assets/script/query.json')
+    fetch(requestUrl)
         .then(function (response) {
             if (response.ok) {
                 response.json().then(function (data) {
-                    console.log(data);
+                    document.getElementById("recipe-container").style.display = "flex";
                     if (data.length > 0) {
                         extractData(data);
                         anchorListener(data);
-
                     }
                     else {
                         modal1.style.display = 'block';
@@ -49,14 +48,13 @@ var extractData = function (data) {
         var title = data[i].title;
         var imageUrl = data[i].image;
         var recipeId = data[i].id;
-//renders 9 recipes to the index.html page
+        //renders 9 recipes to the index.html page
         renderRecipes(title, imageUrl, i);
     }
 }
 var formEl = document.querySelector('form');
 var formSubmit = function (event) {
     event.preventDefault();
-    document.getElementById("recipe-container").style.display = "flex";
     var ingredientsEl = document.getElementById('ingredients-search');
     if (ingredientsEl.value) {
         var ingredients = ingredientsEl.value;
@@ -102,14 +100,14 @@ window.onclick = function (event) {
 }
 //eventlister for all anchor tags
 var anchorListener = function (data) {
-var links = document.getElementsByTagName("a");
-for (var i = 0; i < (links.length - 1); i++) {
-    links[i].addEventListener("click", function (event) {
+    var links = document.getElementsByTagName("a");
+    for (var i = 0; i < (links.length - 1); i++) {
+        links[i].addEventListener("click", function (event) {
             var dataString = event.target.closest("a")
-            var newId  = (dataString.id.split('-')[1])-1;
+            var newId = (dataString.id.split('-')[1]) - 1;
             recipeListArray = data[newId].id;
-        localStorage.setItem("recipe", JSON.stringify(recipeListArray));
-    
-    });
-}
+            localStorage.setItem("recipe", JSON.stringify(recipeListArray));
+
+        });
+    }
 }

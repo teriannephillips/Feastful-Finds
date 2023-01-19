@@ -6,6 +6,7 @@
     width: 800px !important; */
 
 }
+
 body {
     background-color: #0f7cf1;
     color: white
@@ -30,7 +31,7 @@ body {
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-}   
+}
 
 .headingSub {
     display: flex;
@@ -79,73 +80,99 @@ hr {
 }
 
 .theModal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
 }
 
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto;
+    /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-    color:#0f7cf1;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+    color: #0f7cf1;
 }
 
-.close,.close2,.close3 {
+.close,
+.close2,
+.close3 {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 
-.close,.close2,.close3:hover,
-.close,.close2,.close3 :focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+.close,
+.close2,
+.close3:hover,
+.close,
+.close2,
+.close3 :focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .footerlogo {
     color: white;
 }
+
 .h2 {
-font-size: x-large;
-margin:2%;
-text-align:center;
+    font-size: x-large;
+    margin: 2%;
+    text-align: center;
 }
+
 h4 {
-    color:white;
+    color: white;
 }
+
 li {
     margin-top: 1%;
 }
+
 #ingredients-search {
     padding-left: 5%;
     margin-right: 5%;
 }
+
 footer {
     text-align: center;
 }
+
 #ingredients-id {
     list-style-type: square;
 }
-#recipe-container, #recipe-container2  {
-    margin-top:2%;
+
+#recipe-container,
+#recipe-container2 {
+    margin-top: 2%;
     margin: 2%;
     width: 95%;
 }
+
 .single-div {
     width: 30%;
 }
+
 @media screen and (max-width: 1465px) {
     .uk-width-1-4 {
         display: none;
@@ -155,7 +182,8 @@ footer {
         width: 100%;
     }
 
-    .heading, .headingSub {
+    .heading,
+    .headingSub {
         margin: auto;
         float: none;
         padding-left: 10%;
@@ -166,14 +194,27 @@ footer {
 @media screen and (max-width: 1164px) {
     .recipe {
         width: 90%;
-        height:150%;
-
+        height: 150%;
+        margin: 0%;
+        position:relative;
     }
-    .heading, .headingSub {
+
+    .heading {
         margin: auto;
         float: none;
+        font-size: 400%;
     }
-    .heading {
-        font-size:400% ;
+
+    .headingSub {
+        display: none;
     }
+
+    #ingredients-search {
+        font-size: x-large;
+    }
+    body {
+        margin:0%;
+        width: 100%;
+    }
+
 }
