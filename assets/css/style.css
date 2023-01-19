@@ -119,6 +119,8 @@ hr {
 }
 .h2 {
 font-size: x-large;
+margin:2%;
+text-align:center;
 }
 li {
     margin-top: 1%;
@@ -130,29 +132,14 @@ li {
 footer {
     text-align: center;
 }
-
-@media screen and (max-width: 1465px) {
-    .uk-width-1-4 {
-        display: none;
-    }
-
-    .uk-width-3-4 {
-        width: 100%;
-    }
-
-    .heading, .headingSub {
-        margin: auto;
-        float: none;
-        padding-left: 10%;
-    }
+#ingredients-id {
+    list-style-type: square;
 }
-
-@media screen and (max-width: 1164px) {
-    .recipe {
-        width: 100%;
-    }
-    .heading, .headingSub {
-        margin: auto;
-        float: none;
-    }
+#recipe-container, #recipe-container2  {
+    margin-top:2%;
+    margin: 2%;
+    width: 100%;
+}
+#image-container {
+    float:right;
 }
