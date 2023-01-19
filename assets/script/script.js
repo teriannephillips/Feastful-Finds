@@ -21,10 +21,10 @@ var getFortuneCookie = function () {
 getFortuneCookie();
 // recipes function
 var getRecipes = function (ingredients) {
-    requestUrl = 'https://api.spoonacular.com/recipes/findByIngredients?ingredients=' + ingredients + '&apiKey=de671bfd997d4e2bb42b9b72c3e38959';
+    //requestUrl = 'https://api.spoonacular.com/recipes/findByIngredients?ingredients=' + ingredients + '&apiKey=de671bfd997d4e2bb42b9b72c3e38959';
     //line below is for testing purposes as API has limits
-    // fetch('./assets/script/query.json')
-    fetch(requestUrl)
+     fetch('./assets/script/query.json')
+    //fetch(requestUrl)
         .then(function (response) {
             if (response.ok) {
                 response.json().then(function (data) {
