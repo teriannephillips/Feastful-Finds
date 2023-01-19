@@ -122,6 +122,9 @@ font-size: x-large;
 margin:2%;
 text-align:center;
 }
+h4 {
+    color:white;
+}
 li {
     margin-top: 1%;
 }
@@ -138,8 +141,39 @@ footer {
 #recipe-container, #recipe-container2  {
     margin-top:2%;
     margin: 2%;
-    width: 100%;
+    width: 95%;
 }
-#image-container {
-    float:right;
+.single-div {
+    width: 30%;
+}
+@media screen and (max-width: 1465px) {
+    .uk-width-1-4 {
+        display: none;
+    }
+
+    .uk-width-3-4 {
+        width: 100%;
+    }
+
+    .heading, .headingSub {
+        margin: auto;
+        float: none;
+        padding-left: 10%;
+    }
+
+}
+
+@media screen and (max-width: 1164px) {
+    .recipe {
+        width: 90%;
+        height:150%;
+
+    }
+    .heading, .headingSub {
+        margin: auto;
+        float: none;
+    }
+    .heading {
+        font-size:400% ;
+    }
 }

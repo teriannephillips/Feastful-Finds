@@ -7,14 +7,13 @@ var getFortuneCookie = function () {
             if (response.ok) {
                 response.json().then(function (data) {
                     var fortuneCookie = data.slip.advice;
-                    console.log(fortuneCookie);
                     renderFortuneCookie(fortuneCookie);
-                    //TO DO: Mathieu - create function that renders fortune cookie to the html index page by passing the variable fortuneCookie
                 });
             }
             else {
                 console.log(response.status);
-                //TO DO: Huang - Modals
+                var fortuneCookieEl = document.getElementById("adviceSlip");
+                fortuneCookieEl.innerHTML = "Fortune Cookie: Cannot be displayed at this time"
             }
         });
 };
