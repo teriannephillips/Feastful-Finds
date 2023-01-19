@@ -123,3 +123,10 @@ font-size: x-large;
 li {
     margin-top: 1%;
 }
+#ingredients-search {
+    padding-left: 5%;
+    margin-right: 5%;
+}
+footer {
+    text-align: center;
+}
