@@ -130,3 +130,29 @@ li {
 footer {
     text-align: center;
 }
+
+@media screen and (max-width: 1465px) {
+    .uk-width-1-4 {
+        display: none;
+    }
+
+    .uk-width-3-4 {
+        width: 100%;
+    }
+
+    .heading, .headingSub {
+        margin: auto;
+        float: none;
+        padding-left: 10%;
+    }
+}
+
+@media screen and (max-width: 1164px) {
+    .recipe {
+        width: 100%;
+    }
+    .heading, .headingSub {
+        margin: auto;
+        float: none;
+    }
+}
