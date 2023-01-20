@@ -28,7 +28,7 @@ var renderSingleRecipe = function (data) {
     recipeTitleEl.innerHTML = data.title;
     //create the summary and display the data
     var summaryEl = document.createElement("p");
-    summaryEl.innerHTML = "You can never had too many " + data.cuisines + " recipes" + ". This recipe serves " + data.servings + " and is ready in " + data.readyInMinutes + " minutes. Enjoy!";
+    summaryEl.innerHTML = "You can never have too many " + data.cuisines + " recipes" + ". This recipe serves " + data.servings + " and is ready in " + data.readyInMinutes + " minutes. Enjoy!";
     recipeContainer2.appendChild(summaryEl);
     // create the ingredients list tags and display the data
     var ingredentlLength = data.extendedIngredients.length;
